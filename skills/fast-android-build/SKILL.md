@@ -26,12 +26,20 @@ Use this for the fastest day-to-day development build:
 ./gradlew assembleDebug --parallel --build-cache --configuration-cache --no-daemon
 ```
 
-### Build with Tests
+### Build with Apps and Tests
 
-Use this when you need to verify changes with unit tests:
+Use this when you need to verify changes with both build and unit tests:
 
 ```powershell
 ./gradlew assembleDebug testDebugUnitTest --parallel --build-cache --configuration-cache --no-daemon
+```
+
+### Fast Unit Tests Only
+
+Use this for the quickest possible test execution cycles:
+
+```powershell
+./gradlew testDebugUnitTest --parallel --build-cache --configuration-cache --no-daemon --offline
 ```
 
 ### Clean Build (The Nuclear Option)
