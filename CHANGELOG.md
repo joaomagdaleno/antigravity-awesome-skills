@@ -9,6 +9,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+---
+
+## [3.1.0] - 2026-01-26 - "Stable & Deterministic"
+
+### Fixed
+
+- **CI/CD Drift**: Resolved persistent "Uncommitted Changes" errors in CI by making the index generation script deterministic (sorting by name + ID).
+- **Registry Sync**: Synced `README.md` and `skills_index.json` to accurately reflect all 253 skills.
+
+### Added (Registry Restore)
+
+The following skills are now correctly indexed and visible in the registry:
+
+- **Marketing & Growth**: `programmatic-seo`, `schema-markup`, `seo-fundamentals`, `form-cro`, `popup-cro`, `analytics-tracking`.
+- **Security**: `windows-privilege-escalation`, `wireshark-analysis`, `wordpress-penetration-testing`, `writing-plans`.
+- **Development**: `tdd-workflow`, `web-performance-optimization`, `webapp-testing`, `workflow-automation`, `zapier-make-patterns`.
+- **Maker Tools**: `telegram-bot-builder`, `telegram-mini-app`, `viral-generator-builder`.
+
+### Changed
+
+- **Documentation**: Added `docs/CI_DRIFT_FIX.md` as a canonical reference for resolving drift issues.
+- **Guidance**: Updated `GETTING_STARTED.md` counts to match the full registry (253+ skills).
+- **Maintenance**: Updated `MAINTENANCE.md` with strict protocols for handling generated files.
+
+## [3.0.0] - 2026-01-25 - "The Governance Update"
+
+### Added
+
+- **Governance & Security**:
+  - `docs/QUALITY_BAR.md`: Defined 5-point validation standard (Metadata, Risk, Triggers).
+  - `docs/SECURITY_GUARDRAILS.md`: Enforced "Authorized Use Only" for offensive skills.
+  - `CODE_OF_CONDUCT.md`: Adhered to Contributor Covenant v2.1.
+- **Automation**:
+  - `scripts/validate_skills.py`: Automated Quality Bar enforcement (Soft Mode supported).
+  - `.github/workflows/ci.yml`: Automated PR checks.
+  - `scripts/generate_index.py`: Registry generation with Risk & Source columns.
+- **Experience**:
+  - `docs/BUNDLES.md`: 9 Starter Packs (Essentials, Security, Web, Agent, Game Dev, DevOps, Data, Testing, Creative).
+  - **Interactive Registry**: README now features Risk Levels (🔴/🟢/🟣) and Collections.
+- **Documentation**:
+  - `docs/EXAMPLES.md`: Cookbook with 3 real-world scenarios.
+  - `docs/SOURCES.md`: Legal ledger for attributions and licenses.
+  - `RELEASE_NOTES.md`: Generated release announcement (archived).
+
+### Changed
+
+- **Standardization**: All 250+ skills are now validated against the new Quality Bar schema.
+- **Project Structure**: Introduced `docs/` folder for scalable documentation.
+
 ## [2.14.0] - 2026-01-25 - "Web Intelligence & Windows"
 
 ### Added

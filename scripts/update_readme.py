@@ -20,7 +20,6 @@ def update_readme():
         content = f.read()
 
     # 1. Update Title Count
-    # Pattern: # 🌌 Antigravity Awesome Skills: [NUM]+ Agentic Skills
     content = re.sub(
         r'(# 🌌 Antigravity Awesome Skills: )\d+(\+ Agentic Skills)',
         f'\\g<1>{total_skills}\\g<2>',
@@ -28,7 +27,6 @@ def update_readme():
     )
 
     # 2. Update Blockquote Count
-    # Pattern: Collection of [NUM]+ Universal
     content = re.sub(
         r'(Collection of )\d+(\+ Universal)',
         f'\\g<1>{total_skills}\\g<2>',
@@ -36,7 +34,6 @@ def update_readme():
     )
 
     # 3. Update Intro Text Count
-    # Pattern: library of **[NUM] high-performance skills**
     content = re.sub(
         r'(library of \*\*)\d+( high-performance skills\*\*)',
         f'\\g<1>{total_skills}\\g<2>',
@@ -44,14 +41,21 @@ def update_readme():
     )
 
     # 4. Update Registry Header Count
-    # Pattern: ## Full Skill Registry ([NUM]/[NUM])
     content = re.sub(
         r'(## Full Skill Registry \()\d+/\d+(\))',
         f'\\g<1>{total_skills}/{total_skills}\\g<2>',
         content
     )
 
-    # 5. Generate New Registry Table
+    # 5. Insert Collections / Bundles Section (New in Phase 3)
+    # This logic checks if "## 📦 Curated Collections" exists. If not, it creates it before Full Registry.
+    collections_header = "## 📦 Curated Collections"
+    
+    if collections_header not in content:
+        # Insert before Full Skill Registry
+        content = content.replace("## Full Skill Registry", f"{collections_header}\n\n[Check out our Starter Packs in docs/BUNDLES.md](docs/BUNDLES.md) to find the perfect toolkit for your role.\n\n## Full Skill Registry")
+
+    # 6. Generate New Registry Table
     print("🔄 Generating new registry table...")
     
     # Store the Note block to preserve it
@@ -61,30 +65,34 @@ def update_readme():
     if note_match:
         note_block = note_match.group(1)
     else:
-        # Fallback default note if not found (though it should be there)
-        note_block = "> [!NOTE] > **Document Skills**: We provide both **community** and **official Anthropic** versions for DOCX, PDF, PPTX, and XLSX. Locally, the official versions are used by default (via symlinks). In the repository, both versions are available for flexibility."
+        note_block = "> [!NOTE] > **Document Skills**: We provide both **community** and **official Anthropic** versions. Locally, the official versions are used by default."
 
-    table_header = "| Skill Name | Description | Path |\n| :--- | :--- | :--- |"
+    table_header = "| Skill Name | Risk | Description | Path |\n| :--- | :--- | :--- | :--- |"
     table_rows = []
 
     for skill in skills:
         name = skill.get('name', 'Unknown')
         desc = skill.get('description', '').replace('\n', ' ').strip()
         path = skill.get('path', '')
+        risk = skill.get('risk', 'unknown')
         
-        # Escape pipes in description to strictly avoid breaking the table
-        desc = desc.replace('|', '\|')
+        # Risk Icons
+        risk_icon = "⚪"
+        if risk == "official": risk_icon = "🟣" # Mapping official to purple
+        if risk == "none": risk_icon = "🟢"
+        if risk == "safe": risk_icon = "🔵"
+        if risk == "critical": risk_icon = "🟠"
+        if risk == "offensive": risk_icon = "🔴"
         
-        row = f"| **{name}** | {desc} | `{path}` |"
+        # Escape pipes
+        desc = desc.replace('|', r'\|')
+        
+        row = f"| **{name}** | {risk_icon} | {desc} | `{path}` |"
         table_rows.append(row)
 
     new_table_section = f"{note_block}\n\n{table_header}\n" + "\n".join(table_rows)
 
     # Replace the old table section
-    # We look for the start of the section and the end (which is either the next H2 or EOF)
-    # The section starts after "## Full Skill Registry (X/X)"
-    
-    # First, find the header position
     header_pattern = r'## Full Skill Registry \(\d+/\d+\)'
     header_match = re.search(header_pattern, content)
     
@@ -99,18 +107,10 @@ def update_readme():
     
     if next_section_match:
         end_pos = start_pos + next_section_match.start()
-        # Keep everything after the table
         rest_of_file = content[end_pos:]
     else:
-        # Table goes to end of file
         rest_of_file = ""
 
-    # Check for text between Header and Table (usually just newlines or the Note)
-    # We replace everything from Header End to Next Section with our New Table Section
-    # but we need to supply the pre-table Note which we extracted/re-generated above.
-    
-    # Simplification: We construct the top part (before header), add header, add new table section, add rest.
-    
     before_header = content[:header_match.start()]
     new_header = f"## Full Skill Registry ({total_skills}/{total_skills})"
     
@@ -119,7 +119,7 @@ def update_readme():
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
 
-    print("✅ README.md updated successfully.")
+    print("✅ README.md updated successfully with Collections link and Risk columns.")
 
 if __name__ == "__main__":
     update_readme()
