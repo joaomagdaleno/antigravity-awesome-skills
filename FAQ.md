@@ -116,7 +116,7 @@ Use the `@` symbol followed by the skill name:
 
 ### How do I know which skill to use?
 
-1.  **Browse the README**: Check the [Full Skill Registry](README.md#full-skill-registry-253253).
+1.  **Browse the README**: Check the [Full Skill Registry](README.md#full-skill-registry-255255).
 2.  **Search**: `ls skills/ | grep "keyword"`
 3.  **Ask your AI**: "What skills do you have for testing?"
 

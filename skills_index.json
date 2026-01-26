@@ -292,7 +292,7 @@
     "path": "skills/backend-dev-guidelines",
     "category": "uncategorized",
     "name": "backend-dev-guidelines",
-    "description": "Comprehensive backend development guide for Node.js/Express/TypeScript microservices. Use when creating routes, controllers, services, repositories, middleware, or working with Express APIs, Prisma database access, Sentry error tracking, Zod validation, unifiedConfig, dependency injection, or async patterns. Covers layered architecture (routes \u2192 controllers \u2192 services \u2192 repositories), BaseController pattern, error handling, performance monitoring, testing strategies, and migration from legacy patterns.",
+    "description": "Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architecture, BaseController pattern, dependency injection, Prisma repositories, Zod validation, unifiedConfig, Sentry error tracking, async safety, and testing discipline.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -648,6 +648,15 @@
     "source": "unknown"
   },
   {
+    "id": "daily-news-report",
+    "path": "skills/daily-news-report",
+    "category": "uncategorized",
+    "name": "daily-news-report",
+    "description": "\u57fa\u4e8e\u9884\u8bbe URL \u5217\u8868\u6293\u53d6\u5185\u5bb9\uff0c\u7b5b\u9009\u9ad8\u8d28\u91cf\u6280\u672f\u4fe1\u606f\u5e76\u751f\u6210\u6bcf\u65e5 Markdown \u62a5\u544a\u3002",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "database-design",
     "path": "skills/database-design",
     "category": "uncategorized",
@@ -859,7 +868,7 @@
     "path": "skills/frontend-design",
     "category": "uncategorized",
     "name": "frontend-design",
-    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+    "description": "Create distinctive, production-grade frontend interfaces with intentional aesthetics, high craft, and non-generic visual identity. Use when building or styling web UIs, components, pages, dashboards, or frontend applications.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -868,7 +877,7 @@
     "path": "skills/frontend-dev-guidelines",
     "category": "uncategorized",
     "name": "frontend-dev-guidelines",
-    "description": "Frontend development guidelines for React/TypeScript applications. Modern patterns including Suspense, lazy loading, useSuspenseQuery, file organization with features directory, MUI v7 styling, TanStack Router, performance optimization, and TypeScript best practices. Use when creating components, pages, features, fetching data, styling, routing, or working with frontend code.",
+    "description": "Opinionated frontend development standards for modern React + TypeScript applications. Covers Suspense-first data fetching, lazy loading, feature-based architecture, MUI v7 styling, TanStack Router, performance optimization, and strict TypeScript practices.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -1071,6 +1080,15 @@
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
   {
+    "id": "last30days",
+    "path": "skills/last30days",
+    "category": "uncategorized",
+    "name": "last30days",
+    "description": "Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for the user's target tool.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "launch-strategy",
     "path": "skills/launch-strategy",
     "category": "uncategorized",
@@ -1174,7 +1192,7 @@
     "path": "skills/mobile-design",
     "category": "uncategorized",
     "name": "mobile-design",
-    "description": "Mobile-first design thinking and decision-making for iOS and Android apps. Touch interaction, performance patterns, platform conventions. Teaches principles, not fixed values. Use when building React Native, Flutter, or native mobile apps.",
+    "description": "Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch interaction, performance, platform conventions, offline behavior, and mobile-specific decision-making. Teaches principles and constraints, not fixed layouts. Use for React Native, Flutter, or native mobile apps.",
     "risk": "unknown",
     "source": "unknown"
   },

@@ -7,6 +7,41 @@ It covers the **Quality Bar**, **Documentation Consistency**, and **Release Work
 
 ---
 
+## 0. 🤖 Agent Protocol (THE BIBLE)
+
+**AGENTS MUST READ AND FOLLOW THIS SECTION BEFORE MARKING ANY TASK AS COMPLETE.**
+
+There are 3 things that usually fail/get forgotten. **DO NOT FORGET THEM:**
+
+### 1. 📤 ALWAYS PUSH (Non-Negotiable)
+
+Committing is NOT enough. You must PUSH to the remote.
+
+- **BAD**: `git commit -m "feat: new skill"` (User sees nothing)
+- **GOOD**: `git commit -m "..." && git push origin main`
+
+### 2. 🔄 SYNC GENERATED FILES (Avoid CI Drift)
+
+If you touch `skills/`, you **MUST** run the validation chain.
+
+- Running `validate_skills.py` is NOT optional.
+- Running `generate_index.py` is NOT optional.
+- Running `update_readme.py` is NOT optional.
+  _If CI fails because of drift, you have failed._
+
+### 3. 📝 EVIDENCE OF WORK
+
+- You must create/update `walkthrough.md` or `RELEASE_NOTES.md` to document what changed.
+- If you made something new, **link it** in the artifacts.
+
+### 4. 🚫 NO BRANCHES
+
+- **ALWAYS use the `main` branch.**
+- NEVER create feature branches (e.g., `feat/new-skill`).
+- We commit directly to `main` to keep history linear and simple.
+
+---
+
 ## 1. 🚦 Daily Maintenance Routine
 
 ### A. Validation Chain
@@ -84,15 +119,25 @@ If you update installation instructions or tool compatibility, you MUST update a
 
 _Common pitfall: Updating the clone URL in README but leaving an old one in FAQ._
 
-### C. Statistics
+### C. Statistics Consistency (CRITICAL)
 
-If you add skills, update the counts:
+If you add/remove skills, you **MUST** ensure the total count is identical in ALL locations.
+**Do not allow drift** (e.g., 356 in title, 354 in header).
 
-- Title of `README.md`: "253+ Agentic Skills..."
-- `## Full Skill Registry (253/253)` header.
-- `GETTING_STARTED.md` intro.
+Locations to check:
 
-### D. Badges & Links
+1.  **Title of `README.md`**: "356+ Agentic Skills..."
+2.  **`## Full Skill Registry (356/356)` header**.
+3.  **`GETTING_STARTED.md` intro**.
+
+### D. Credits Policy (Who goes where?)
+
+- **Credits & Sources**: Use this for **External Repos**.
+  - _Rule_: "I extracted skills from this link you sent me." -> Add to `## Credits & Sources`.
+- **Repo Contributors**: Use this for **Pull Requests**.
+  - _Rule_: "This user sent a PR." -> Add to `## Repo Contributors`.
+
+### E. Badges & Links
 
 - **Antigravity Badge**: Must point to `https://github.com/sickn33/antigravity-awesome-skills`, NOT `anthropics/antigravity`.
 - **License**: Ensure the link points to `LICENSE` file.
@@ -131,6 +176,48 @@ When cutting a new version (e.g., V4):
     git tag -a v3.0.0 -m "V3 Enterprise Edition"
     git push origin v3.0.0
     ```
+
+### 📋 Release Note Template
+
+All changeslogs/release notes MUST follow this structure to ensure professionalism and quality:
+
+```markdown
+# Release vX.Y.Z: [Theme Name]
+
+> **[One-line catchy summary of the release]**
+
+[Brief 2-3 sentence intro about the release's impact]
+
+## 🚀 New Skills
+
+### [Emoji] [Skill Name](skills/skill-name/)
+
+**[Bold high-level benefit]**
+[Description of what it does]
+
+- **Key Feature 1**: [Detail]
+- **Key Feature 2**: [Detail]
+
+> **Try it:** `(User Prompt) ...`
+
+---
+
+## 📦 Improvements
+
+- **Registry Update**: Now tracking [N] skills.
+- **[Component]**: [Change detail]
+
+## 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **@username** for `skill-name`
+- **@username** for `fix-name`
+
+---
+
+_Upgrade now: `git pull origin main` to fetch the latest skills._
+```
 
 ---
 
