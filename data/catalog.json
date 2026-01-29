@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T16:10:28.837Z",
-  "total": 552,
+  "generatedAt": "2026-01-29T12:19:36.343Z",
+  "total": 553,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -12842,6 +12842,29 @@
         "building"
       ],
       "path": "skills/unity-ecs-patterns/SKILL.md"
+    },
+    {
+      "id": "unreal-engine-cpp-pro",
+      "name": "unreal-engine-cpp-pro",
+      "description": "Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices.",
+      "category": "architecture",
+      "tags": [
+        "unreal",
+        "engine",
+        "cpp"
+      ],
+      "triggers": [
+        "unreal",
+        "engine",
+        "cpp",
+        "pro",
+        "development",
+        "covering",
+        "uobject",
+        "hygiene",
+        "performance"
+      ],
+      "path": "skills/unreal-engine-cpp-pro/SKILL.md"
     },
     {
       "id": "upstash-qstash",

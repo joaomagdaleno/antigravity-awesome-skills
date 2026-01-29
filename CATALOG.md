@@ -1,10 +1,10 @@
 # Skill Catalog
 
-Generated at: 2026-01-28T16:10:28.837Z
+Generated at: 2026-01-29T12:19:36.343Z
 
-Total skills: 552
+Total skills: 553
 
-## architecture (52)
+## architecture (53)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -56,6 +56,7 @@ Total skills: 552
 | `tailwind-design-system` | Build scalable design systems with Tailwind CSS, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implemen... | tailwind | tailwind, scalable, css, tokens, component, libraries, responsive, creating, implementing, standardizing, ui |
 | `tailwind-patterns` | Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture. | tailwind | tailwind, css, v4, principles, first, configuration, container, queries, token, architecture |
 | `testing-patterns` | Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing unit tests, creating test factories, or following TDD red-gr... |  | testing, jest, factory, functions, mocking, tdd, writing, unit, tests, creating, test, factories |
+| `unreal-engine-cpp-pro` | Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices. | unreal, engine, cpp | unreal, engine, cpp, pro, development, covering, uobject, hygiene, performance |
 | `wcag-audit-patterns` | Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fi... | wcag, audit | wcag, audit, conduct, accessibility, audits, automated, testing, manual, verification, remediation, guidance, auditing |
 | `workflow-orchestration-patterns` | Design durable workflows with Temporal for distributed systems. Covers workflow vs activity separation, saga patterns, state management, and determinism cons... |  | orchestration, durable, temporal, distributed, covers, vs, activity, separation, saga, state, determinism, constraints |
 | `workflow-patterns` | Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding th... |  | skill, implementing, tasks, according, conductor, tdd, handling, phase, checkpoints, managing, git, commits |

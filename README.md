@@ -1,6 +1,6 @@
-# 🌌 Antigravity Awesome Skills: 552+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Antigravity Awesome Skills: 560+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 552+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode**
+> **The Ultimate Collection of 560+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
@@ -11,7 +11,7 @@
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray)](https://github.com/opencode-ai/opencode)
 [![Antigravity](https://img.shields.io/badge/Antigravity-DeepMind-red)](https://github.com/sickn33/antigravity-awesome-skills)
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **552 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Antigravity Awesome Skills** is a curated, battle-tested library of **560 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
@@ -29,7 +29,7 @@ This repository provides essential skills to transform your AI assistant into a 
 - [🔌 Compatibility & Invocation](#compatibility--invocation)
 - [📦 Features & Categories](#features--categories)
 - [🎁 Curated Collections (Bundles)](#curated-collections)
-- [📚 Browse 552+ Skills](#browse-552-skills)
+- [📚 Browse 560+ Skills](#browse-560-skills)
 - [🛠️ Installation](#installation)
 - [🤝 How to Contribute](#how-to-contribute)
 - [👥 Contributors & Credits](#credits--sources)
@@ -52,10 +52,14 @@ AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **speci
 
 ### 2. ⚡️ Quick Start (The "Bundle" Way)
 
-Don't install 552+ skills manually. Use our **Starter Packs**:
+Don't install 560+ skills manually. Use our **Starter Packs**:
 
-1.  **Clone the repo**:
+1.  **Install** (pick one):
     ```bash
+    # Easiest: npx installer (clones to ~/.agent/skills by default)
+    npx antigravity-awesome-skills
+
+    # Or clone manually
     git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
     ```
 2.  **Pick your persona** (See [docs/BUNDLES.md](docs/BUNDLES.md)):
@@ -91,7 +95,7 @@ These skills follow the universal **SKILL.md** format and work with any AI codin
 
 > [!WARNING]
 > **Windows Users**: This repository uses **symlinks** for official skills.
-> You must enable Developer Mode or run Git as Administrator:
+> The **npx** installer sets `core.symlinks=true` automatically. For **git clone**, enable Developer Mode or run Git as Administrator:
 > `git clone -c core.symlinks=true https://github.com/...`
 
 ---
@@ -120,7 +124,7 @@ The repository is organized into specialized domains to transform your AI into a
 
 [Check out our Starter Packs in docs/BUNDLES.md](docs/BUNDLES.md) to find the perfect toolkit for your role.
 
-## Browse 552+ Skills
+## Browse 560+ Skills
 
 We have moved the full skill registry to a dedicated catalog to keep this README clean.
 
@@ -128,10 +132,33 @@ We have moved the full skill registry to a dedicated catalog to keep this README
 
 ## Installation
 
-To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Cursor**, **Antigravity**, or **OpenCode**, clone this repository into your agent's skills directory:
+To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Cursor**, **Antigravity**, or **OpenCode**:
+
+### Option A: npx (recommended)
 
 ```bash
-# Universal installation (works with most tools)
+# Default: ~/.agent/skills (universal)
+npx antigravity-awesome-skills
+
+# Cursor
+npx antigravity-awesome-skills --cursor
+
+# Claude Code
+npx antigravity-awesome-skills --claude
+
+# Gemini CLI
+npx antigravity-awesome-skills --gemini
+
+# Custom path
+npx antigravity-awesome-skills --path ./my-skills
+```
+
+Run `npx antigravity-awesome-skills --help` for all options. If the directory already exists, the installer runs `git pull` to update.
+
+### Option B: git clone
+
+```bash
+# Universal (works with most tools)
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
 
 # Claude Code specific
@@ -257,11 +284,12 @@ We officially thank the following contributors for their help in making this rep
 - [Owen Wu](https://github.com/yubing744)
 - [SuperJMN](https://github.com/SuperJMN)
 - [Viktor Ferenczi](https://github.com/viktor-ferenczi)
+- [Đỗ Khắc Gia Khoa](https://github.com/Dokhacgiakhoa)
+- [junited31](https://github.com/junited31)
 - [krisnasantosa15](https://github.com/krisnasantosa15)
 - [raeef1001](https://github.com/raeef1001)
 - [taksrules](https://github.com/taksrules)
 - [zebbern](https://github.com/zebbern)
-- [Đỗ Khắc Gia Khoa](https://github.com/dokhacgiakhoa)
 - [vuth-dogo](https://github.com/vuth-dogo)
 
 ## Star History
