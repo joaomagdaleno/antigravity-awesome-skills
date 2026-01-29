@@ -1,6 +1,6 @@
 # Bắt đầu với Antigravity Awesome Skills (V3)
 
-[Đọc bản gốc tiếng Anh](./GETTING_STARTED.md)
+[Đọc bản gốc tiếng Anh](../GETTING_STARTED.md)
 
 **Bạn là người mới? Hướng dẫn này sẽ giúp bạn "nâng cấp" trí tuệ cho AI Agent chỉ trong 5 phút.**
 

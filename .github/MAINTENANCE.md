@@ -124,8 +124,8 @@ GitHub's anchor generation breaks if headers have emojis.
 If you update installation instructions or tool compatibility, you MUST update all 3 files:
 
 1.  `README.md` (Source of Truth)
-2.  `GETTING_STARTED.md` (Beginner Guide)
-3.  `FAQ.md` (Troubleshooting)
+2.  `docs/GETTING_STARTED.md` (Beginner Guide)
+3.  `docs/FAQ.md` (Troubleshooting)
 
 _Common pitfall: Updating the clone URL in README but leaving an old one in FAQ._
 
@@ -138,7 +138,7 @@ Locations to check:
 
 1.  **Title of `README.md`**: "356+ Agentic Skills..."
 2.  **`## Full Skill Registry (356/356)` header**.
-3.  **`GETTING_STARTED.md` intro**.
+3.  **`docs/GETTING_STARTED.md` intro**.
 
 ### D. Credits Policy (Who goes where?)
 
