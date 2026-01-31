@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-30T19:35:13.007Z",
-  "total": 617,
+  "generatedAt": "2026-01-31T00:55:02.429Z",
+  "total": 618,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -5534,6 +5534,32 @@
         "models"
       ],
       "path": "skills/fal-workflow/SKILL.md"
+    },
+    {
+      "id": "fast-android-build",
+      "name": "fast-android-build",
+      "description": "Use when the user wants to run Android/Gradle builds faster, or when a \"debug build\" is requested. Covers parallelism, build cache, configuration cache, and offline mode optimizations.",
+      "category": "development",
+      "tags": [
+        "fast",
+        "android",
+        "build"
+      ],
+      "triggers": [
+        "fast",
+        "android",
+        "build",
+        "user",
+        "wants",
+        "run",
+        "gradle",
+        "faster",
+        "debug",
+        "requested",
+        "covers",
+        "parallelism"
+      ],
+      "path": "skills/fast-android-build/SKILL.md"
     },
     {
       "id": "fastapi-pro",

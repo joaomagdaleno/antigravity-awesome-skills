@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-30T19:35:13.007Z",
+  "generatedAt": "2026-01-31T00:55:02.429Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -40,6 +40,7 @@
         "dotnet-architect",
         "dotnet-backend-patterns",
         "exa-search",
+        "fast-android-build",
         "fastapi-pro",
         "fastapi-templates",
         "firebase",
