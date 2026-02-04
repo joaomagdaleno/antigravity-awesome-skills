@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-02-04T08:08:20.870Z
+Generated at: 2026-02-04T21:00:57.090Z
 
-Total skills: 631
+Total skills: 632
 
 ## architecture (62)
 
@@ -211,7 +211,7 @@ Total skills: 631
 | `web-artifacts-builder` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use ... | web, artifacts, builder | web, artifacts, builder, suite, creating, elaborate, multi, component, claude, ai, html, frontend |
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 
-## development (81)
+## development (82)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -235,6 +235,7 @@ Total skills: 631
 | `dotnet-architect` | Expert .NET backend architect specializing in C#, ASP.NET Core, Entity Framework, Dapper, and enterprise application patterns. Masters async/await, dependenc... | dotnet | dotnet, architect, net, backend, specializing, asp, core, entity, framework, dapper, enterprise, application |
 | `dotnet-backend-patterns` | Master C#/.NET backend development patterns for building robust APIs, MCP servers, and enterprise applications. Covers async/await, dependency injection, Ent... | dotnet, backend | dotnet, backend, net, development, building, robust, apis, mcp, servers, enterprise, applications, covers |
 | `exa-search` | Semantic search, similar content discovery, and structured research using Exa API | exa, search | exa, search, semantic, similar, content, discovery, structured, research, api |
+| `fast-android-build` | Use when the user wants to run Android/Gradle builds faster, or when a "debug build" is requested. Covers parallelism, build cache, configuration cache, and ... | fast, android, build | fast, android, build, user, wants, run, gradle, faster, debug, requested, covers, parallelism |
 | `fastapi-pro` | Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns. Use PROA... | fastapi | fastapi, pro, high, performance, async, apis, sqlalchemy, pydantic, v2, microservices, websockets, python |
 | `fastapi-templates` | Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applicati... | fastapi | fastapi, async, dependency, injection, error, handling, building, new, applications, setting, up, backend |
 | `firecrawl-scraper` | Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API | firecrawl, scraper | firecrawl, scraper, deep, web, scraping, screenshots, pdf, parsing, website, crawling, api |
