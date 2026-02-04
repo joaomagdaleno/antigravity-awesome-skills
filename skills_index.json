@@ -2106,15 +2106,6 @@
     "source": "https://github.com/fal-ai-community/skills/blob/main/skills/claude.ai/fal-workflow/SKILL.md"
   },
   {
-    "id": "fast-android-build",
-    "path": "skills/fast-android-build",
-    "category": "uncategorized",
-    "name": "fast-android-build",
-    "description": "Use when the user wants to run Android/Gradle builds faster, or when a \"debug build\" is requested. Covers parallelism, build cache, configuration cache, and offline mode optimizations.",
-    "risk": "unknown",
-    "source": "unknown"
-  },
-  {
     "id": "fastapi-pro",
     "path": "skills/fastapi-pro",
     "category": "uncategorized",
